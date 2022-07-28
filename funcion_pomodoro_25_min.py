@@ -6,7 +6,7 @@ def pomodoro_25():
     segundos_60 = 60
     
     while True:
-        if minutos == 25:
+        if minutos == 2:
             print(f"Finalizó un Pomodoro: {minutos} minutos : {segundos} segundos")
             break
                     
@@ -23,7 +23,3 @@ def pomodoro_25():
             time.sleep(1)
             print(minutos,":",segundos)
         
-       
-
-
-pomodoro_25()

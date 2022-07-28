@@ -1,6 +1,6 @@
 import time
 
-def pomodoro_25():
+def descanso_30():
     minutos = 0
     segundos = 0
     segundos_60 = 60
@@ -24,6 +24,3 @@ def pomodoro_25():
             print(minutos,":",segundos)
         
        
-
-
-pomodoro_25()

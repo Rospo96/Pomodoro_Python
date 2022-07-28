@@ -1,6 +1,6 @@
 import time
 
-def descando_5():
+def descanso_5():
     minutos = 0
     segundos = 0
     segundos_60 = 60
@@ -25,6 +25,3 @@ def descando_5():
         
        
 
-
-
-descando_5()
