@@ -10,13 +10,11 @@ def descanso_30():
             print(f"Finalizó el descanso de: {minutos} minutos : {segundos} segundos")
             break
                     
-        
         if segundos <= 59:
             segundos += 1
             time.sleep(1)
             print(minutos,":",segundos)
         
-    
         elif segundos == segundos_60:
             minutos += 1        
             segundos = 0                    
