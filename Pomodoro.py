@@ -1,7 +1,7 @@
-import funcion_descanso_5_min
-import funcion_descanso_30_min
-import funcion_pomodoro_25_min
-
+from temporizador.funcion_pomodoro_25_min import pomodoro_25
+from temporizador.funcion_descanso_30_min import descanso_30
+from temporizador.funcion_descanso_5_min import descanso_5
+from time import sleep
 
 # Inicio del programa
 pomodoro_contador = 0
@@ -19,8 +19,7 @@ while True:
         
         # [ OPCION 1 ]
         if opcion_usuario == 1:
-            funcion_pomodoro_25_min.pomodoro_25()
-            print("Finalizó el Pomodoro")
+            pomodoro_25()
             pomodoro_contador += 1
 
         # ---------------------------------------------------
@@ -28,18 +27,21 @@ while True:
         elif opcion_usuario == 2:
             
             if pomodoro_contador == 3:
-                funcion_descanso_30_min.descanso_30()
+                descanso_30()
                 descanso_30_contador += 1
                 print("Finalizó el descando de 30 minutos")
                 
-            funcion_descanso_5_min.descanso_5()
+            descanso_5()
             descanso_5_contador += 1
         # ----------------------------------------------------
         # [ OPCION 3 ]
         elif opcion_usuario == 3:
             print(f"Usted lleva {pomodoro_contador} Pomodoros")
+            sleep(1)
             print(f"Usted lleva {descanso_5_contador} Descansos de 5 minutos")
+            sleep(1)
             print(f"Usted lleva {descanso_30_contador} Descansos de 30 minutos")
+            sleep(1)
         # ----------------------------------------------------
         # [ OPCION 4 ]
         elif opcion_usuario == 4:
