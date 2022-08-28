@@ -14,7 +14,7 @@ while True:
         print("---- PRESIONA 3 PARA MOSTRAR LOS POMODOROS Y DESCANSOS ----")
         print("---- PRESIONA 4 PARA FINALIZAR EL PROGRAMA ----")
         
-        opcion_usuario = int(input("Escribe tu opción: "))
+        opcion_usuario = int(input("Escribe tu opción panita: "))
 
         
         # [ OPCION 1 ]
